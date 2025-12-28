@@ -10,20 +10,23 @@ This repository houses the **Geometric Heterogeneous Ensemble**, a dual-stream a
 
 ---
 
-## 🏗️ Architecture: The Geometric Heterogeneous Ensemble
+## 🏗️ Architecture
+Our approach processes a **9,220-dimensional feature vector** through two distinct mathematical pathways.
 
-Our solution ("Approach 2") ranked **2nd Place** by moving beyond simple end-to-end learning. We employ a **Split-Brain Architecture** that explicitly engineers geometric relationships between modalities before feeding them into a heterogeneous prediction head.
+<p align="center">
+  <img src="architecture_diagram.png" alt="Geometric Ensemble Architecture" width="850">
+</p>
 
-### 1. The 9,220-Dimensional Feature Space
-We construct a massive, unified representation vector `(N, 9220)` by concatenating outputs from four state-of-the-art encoders and explicit geometric injections:
+### 1. Feature Engineering
+We construct a unified vector by concatenating state-of-the-art embeddings with **Explicit Geometric Injections**:
 
-| Feature Component | Dimensions | Source / Logic |
+| Feature Component | Dimensions | Logic |
 | :--- | :---: | :--- |
 | **Whisper v2** | 1,280 | Acoustic/Prosodic Features |
 | **MS-CLAP** | 2,048 | Coarse-Grained Alignment |
 | **LAION-CLAP** | 1,536 | Cross-Modal Embeddings |
 | **DeBERTaV3** | 768 | Syntactic/Semantic Text Features |
-| **Geometric Injection** | *Variable* | **Explicit Math:** Cosine Similarity ($\cos$), Angular Distance ($\angle$), and $L_1/L_2$ Norms calculated between audio and text tensors. |
+| **Geometric Injection** | *Variable* | **Explicit Math:** Cosine Similarity, Angular Distance, L1/L2 Norms calculated between audio and text tensors. |
 
 ### 2. The Split-Brain Predictor
 Instead of a single regressor, we route this vector into two mathematically distinct models to balance accuracy and stability:
