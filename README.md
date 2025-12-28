@@ -1,20 +1,21 @@
 [![XACLE\_Dataset](https://img.shields.io/badge/GitHub-XACLE-blue)](https://github.com/XACLE-Challenge/the_first_XACLE_challenge_baseline_model)
 [![XACLE\_Leaderboard](https://img.shields.io/badge/Leaderboard-XACLE-limegreen)](https://xacle.org/results.html)
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+![License](https://img.shields.io/badge/License-MIT-green)
 ![Python](https://img.shields.io/badge/Python-3.9-blue)
 
 # XACLE-Approach2
 
+> **Official 2nd Place Solution** for the ICASSP 2026 XACLE Grand Challenge.
 
 This repository implements **Approach 2**: a heterogeneous *split‑brain* architecture that combines explicit **geometric feature injection** with deep semantic embeddings to predict audio–text alignment scores.
 
-![Architecture](architecture_diagram.png)
+![Architecture](https://raw.githubusercontent.com/Hmzaah/XACLE-Approach2-/main/architecture_diagram_v1.png "Approach 2: Geometry-Injected Split-Brain Architecture")
 
 ---
 
 ## 🌟 Highlights
 
-* Achieved an SRCC of **0.653** on the official leaderboard.
+* **2nd Place Winner:** Achieved an SRCC of **0.653** on the official leaderboard.
 * **Geometric Injection:** Explicit computation of **Cosine Similarity, Angular Distance, and L1/L2 norms** between audio and text embeddings.
 * **Heterogeneous Stacking:** Combines **XGBoost** (tree‑based) and **SVR** (kernel‑based) predictors for stability and accuracy.
 * **Massive Feature Space:** **9,220‑dimensional** fused representation from Whisper v2, MS‑CLAP, LAION‑CLAP, and DeBERTaV3.
@@ -38,7 +39,7 @@ This repository implements **Approach 2**: a heterogeneous *split‑brain* arch
 
 The final prediction is a weighted fusion of two complementary learners:
 
-$$y = 0.56f_{XGB}(x) + 0.44f_{SVR}(x)$$
+[ y = 0.56,f_{XGB}(x) + 0.44,f_{SVR}(x) ]
 
 * **XGBoost (w = 0.56):** Captures high‑frequency nonlinear interactions (Depth = 6, LR = 0.01)
 * **SVR (w = 0.44):** Models the smooth score manifold (RBF kernel, C = 0.5, ε = 0.1)
