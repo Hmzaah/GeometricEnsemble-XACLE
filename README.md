@@ -96,10 +96,58 @@ python inference.py outputs/version_geometric_submission2 validation
 ---
 
 ## 📊 Results 🥈
-
+<!--
 | Version                      |    SRCC ↑ |     LCC ↑ |    KTAU ↑ |     MSE ↓ |
 | ---------------------------- | --------: | --------: | --------: | --------: |
 | **Submission 2 (This Repo)** | **0.653** | **0.673** | **0.477** | **3.153** |
+-->
+
+<table style="text-align: center;">
+  <thead>
+    <tr>
+      <th rowspan="2">Version</th>
+      <th colspan="4">Validation</th>
+      <th colspan="4">Test</th>
+    </tr>
+    <tr>
+        <td>SRCC $$\uparrow$$</td>
+        <td>LCC $$\uparrow$$</td>
+        <td>KTAU $$\uparrow$$</td>
+        <td>MSE $$\downarrow$$</td>
+        <td>SRCC $$\uparrow$$</td>
+        <td>LCC $$\uparrow$$</td>
+        <td>KTAU $$\uparrow$$</td>
+        <td>MSE $$\downarrow$$</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Baseline</td>
+      <td>0.384</td>
+      <td>0.396</td>
+      <td>0.264</td>
+      <td>4.836</td>
+      <td>0.334</td>
+      <td>0.342</td>
+      <td>0.229</td>
+      <td>4.811</td>
+    </tr>
+    <tr>
+      <td><strong>Submission 2 (This Repo)</strong></td>
+      <td><strong>0.653</strong></td>
+      <td><strong>0.673</strong></td>
+      <td><strong>0.477</strong></td>
+      <td><strong>3.153</strong></td>
+      <td><strong>0.616</strong></td>
+      <td><strong>0.665</strong></td>
+      <td><strong>0.442</strong></td>
+      <td><strong>3.023</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+
+
 
 > Validation metrics computed locally; test metrics taken from the official leaderboard.
 
