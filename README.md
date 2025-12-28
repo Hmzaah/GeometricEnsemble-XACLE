@@ -133,7 +133,7 @@ python inference.py outputs/version_geometric_submission2 validation
       <td>4.811</td>
     </tr>
     <tr>
-      <td><strong>Submission 2 (This Repo)</strong></td>
+      <td><strong>Submission 2<br> (This Repo)</strong></td>
       <td><strong>0.653</strong></td>
       <td><strong>0.673</strong></td>
       <td><strong>0.477</strong></td>
