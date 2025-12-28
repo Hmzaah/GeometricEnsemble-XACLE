@@ -3,19 +3,18 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Python](https://img.shields.io/badge/Python-3.9-blue)
 
-# GeometricEnsemble-XACLE
+# XACLE-Approach2
 
-> **Official 2nd Place Solution** for the ICASSP 2026 XACLE Grand Challenge.
 
 This repository implements **Approach 2**: a heterogeneous *split‑brain* architecture that combines explicit **geometric feature injection** with deep semantic embeddings to predict audio–text alignment scores.
 
-![Architecture](https://raw.githubusercontent.com/Hmzaah/GeometricEnsemble-XACLE/main/architecture_diagram.png)
+![Architecture](https://raw.githubusercontent.com/Hmzaah/XACLE-Approach2/main/architecture_diagram.png)
 
 ---
 
 ## 🌟 Highlights
 
-*  Achieved an SRCC of **0.653** on the official leaderboard.
+* Achieved an SRCC of **0.653** on the official leaderboard.
 * **Geometric Injection:** Explicit computation of **Cosine Similarity, Angular Distance, and L1/L2 norms** between audio and text embeddings.
 * **Heterogeneous Stacking:** Combines **XGBoost** (tree‑based) and **SVR** (kernel‑based) predictors for stability and accuracy.
 * **Massive Feature Space:** **9,220‑dimensional** fused representation from Whisper v2, MS‑CLAP, LAION‑CLAP, and DeBERTaV3.
@@ -58,8 +57,8 @@ This correction significantly reduced MSE and stabilized leaderboard performance
 ## 🚀 Quick Setup
 
 ```bash
-git clone https://github.com/Hmzaah/GeometricEnsemble-XACLE.git
-cd GeometricEnsemble-XACLE
+git clone https://github.com/Hmzaah/XACLE-Approach2.git
+cd XACLE-Approach2
 ```
 
 ```bash
@@ -117,7 +116,7 @@ python inference.py outputs/version_geometric_submission2 validation
 ## 📂 Directory Structure
 
 ```
-GeometricEnsemble-XACLE
+XACLE-Approach2
 │ README.md
 │ requirements.txt
 │ train.py
