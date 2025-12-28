@@ -1,6 +1,6 @@
 [![XACLE\_Dataset](https://img.shields.io/badge/GitHub-XACLE-blue)](https://github.com/XACLE-Challenge/the_first_XACLE_challenge_baseline_model)
 [![XACLE\_Leaderboard](https://img.shields.io/badge/Leaderboard-XACLE-limegreen)](https://xacle.org/results.html)
-![License](https://img.shields.io/badge/License-MIT-green)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 ![Python](https://img.shields.io/badge/Python-3.9-blue)
 
 # XACLE-Approach2
