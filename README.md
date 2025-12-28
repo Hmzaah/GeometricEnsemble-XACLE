@@ -5,12 +5,9 @@
 
 # XACLE-Approach2
 
+This repository implements **Approach 2**: a heterogeneous *split-brain* architecture that combines explicit **geometric feature injection** with deep semantic embeddings to predict audio–text alignment scores.
 
-This repository implements **Approach 2**: a heterogeneous *split‑brain* architecture that combines explicit **geometric feature injection** with deep semantic embeddings to predict audio–text alignment scores.
-
-![Architecture](architecture_diagram_v1.png)
-
----
+![Architecture](https://raw.githubusercontent.com/Hmzaah/XACLE-Approach2-/main/architecture_diagram.jpeg)
 
 ## 🌟 Highlights
 
