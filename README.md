@@ -2,6 +2,8 @@
 [![XACLE\_Leaderboard](https://img.shields.io/badge/Leaderboard-XACLE-limegreen)](https://xacle.org/results.html)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 ![Python](https://img.shields.io/badge/Python-3.9-blue)
+[![Paper](https://img.shields.io/badge/Paper-ICASSP--2026-navy)](https://ieeexplore.ieee.org/document/11461274)
+
 
 # XACLE-Approach2
 
@@ -188,13 +190,17 @@ XACLE-Approach2
 
 ## 📜 Citation
 
+> S. B. Chunarkar, K. Hamza and C. -C. Lee, "Cross-Modal Semantic Alignment Via Ensemble Audio-Text Features for XACLE Challenge," ICASSP 2026 - 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), Barcelona, Spain, 2026, pp. 21883-21885, doi: 10.1109/ICASSP55912.2026.11461274.
 ```bibtex
-@inproceedings{xacle2026geometric,
-  title={Cross-Modal Semantic Alignment via Ensemble Audio-Text Features},
+@INPROCEEDINGS{11461274,
   author={Chunarkar, Snehit B. and Hamza, Krishnagiri and Lee, Chi-Chun},
-  booktitle={ICASSP 2026 XACLE Grand Challenge},
-  year={2026}
-}
+  booktitle={ICASSP 2026 - 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
+  title={Cross-Modal Semantic Alignment Via Ensemble Audio-Text Features for XACLE Challenge}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={21883-21885},
+  doi={10.1109/ICASSP55912.2026.11461274}}
 ```
 
 ## Contact
