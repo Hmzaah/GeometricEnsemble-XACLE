@@ -2,7 +2,7 @@
 [![XACLE\_Leaderboard](https://img.shields.io/badge/Leaderboard-XACLE-limegreen)](https://xacle.org/results.html)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 ![Python](https://img.shields.io/badge/Python-3.9-blue)
-[![Paper](https://img.shields.io/badge/Paper-ICASSP--2026-navy)](https://ieeexplore.ieee.org/document/11461274)
+[![Paper](https://img.shields.io/badge/Paper-ICASSP--2026-navy?logo=ieee)](https://ieeexplore.ieee.org/document/11461274)
 
 
 # XACLE-Approach2
